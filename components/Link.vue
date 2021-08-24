@@ -14,6 +14,7 @@ export default {
     titleName: String,
   }
 }
+
 </script>
 
 <style >
