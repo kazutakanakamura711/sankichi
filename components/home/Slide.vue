@@ -20,7 +20,7 @@
             src: "images/_DSC1758.jpg",
           },
           {
-            src: 'images/027.jpg',
+            src: 'images/_DSCsankichi.jpg',
           },
           {
             src: 'images/_DSC1690.jpg',
