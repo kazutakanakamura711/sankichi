@@ -5,6 +5,7 @@
   class="link"
   :to="linkDestination">{{titleName}}</nuxt-link>
 </div>
+
 </template>
 <script>
 export default {
