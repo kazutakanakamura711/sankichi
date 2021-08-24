@@ -2,7 +2,12 @@
 <v-app>
 
 <div>
-  <HomeSlide/>
+  <HomeContent
+  :contentTitleImg="contentTitles[0].img"
+  :contentTitleH1="contentTitles[3].h1Text"
+  :contentTitleH4="contentTitles[3].h4Text"
+
+  />
   <HomeCalendar
   class="calendar"
   />
@@ -10,7 +15,7 @@
   class="hours"
   />
   <HomeContent
-  :contentTitleImg="contentTitles[0].img"
+  :contentTitleImg="contentTitles[3].img"
   :contentTitleH1="contentTitles[0].h1Text"
   :contentTitleH4="contentTitles[0].h4Text"
 
@@ -67,6 +72,9 @@ export default {
         },
         {
           img: 'images/_DSC1740.jpg', h1Text: 'ACCESS', h4Text: '活気溢れる松山の中心地',
+        },
+        {
+          img: 'images/_DSC1758.jpg', h1Text: '', h4Text: '',
         },
       ]
 
