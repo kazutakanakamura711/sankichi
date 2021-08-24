@@ -6,7 +6,6 @@
   :to="linkDestination">{{titleName}}</nuxt-link>
 </div>
 </template>
-
 <script>
 export default {
   props: {
