@@ -1,10 +1,12 @@
 <template>
-  <v-carousel cycle
-    height="800"
+  <v-carousel
+    cycle
+    height="100vh"
     hide-delimiter-background
-    show-arrows-on-hover:show-arrows="false">
+    show-arrows-on-hover:show-arrows="false"
+  >
     <v-carousel-item
-      v-for="(item,i) in items"
+      v-for="(item, i) in slideImgs"
       :key="i"
       :src="item.src"
     ></v-carousel-item>
@@ -12,21 +14,11 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        items: [
-          {
-            src: "images/_DSC1758.jpg",
-          },
-          {
-            src: 'images/_DSCsankichi.jpg',
-          },
-          {
-            src: 'images/_DSC1690.jpg',
-          },
-        ],
-      }
-    },
-  }
+export default {
+  props: {
+    slideImgs: Array,
+  },
+};
 </script>
+<style lang="scss" scoped>
+</style>
